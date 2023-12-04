@@ -38,8 +38,8 @@ class holistic_module():
             static_image_mode = False,
             model_complexity = 1,
             enable_segmentation = False,
-            min_detection_confidence = 0.5,
-            min_tracking_confidence = 0.5
+            min_detection_confidence = 0.4,
+            min_tracking_confidence = 0.4
         )
 
         self.frame_count = 0
@@ -107,6 +107,8 @@ class holistic_module():
             # print(type(enumerate(self.results.pose_landmarks.landmark)), type(self.poslist))
             # print(list(enumerate(self.results.pose_landmarks.landmark)))
             # print(type(self.results.pose_landmarks.landmark))
+        else:
+            self.memory_pose = {}
 
         return self.memory_pose
 

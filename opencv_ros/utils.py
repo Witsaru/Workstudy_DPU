@@ -49,7 +49,8 @@ def aruco_display(corners, ids, rejected, image):
 			# marker
 			cX = int((topLeft[0] + bottomRight[0]) / 2.0)
 			cY = int((topLeft[1] + bottomRight[1]) / 2.0)
-			cv2.circle(image, (cX, cY), 4, (0, 0, 255), -1)
+			cv2.circle(image, (bottomRight[0], bottomRight[1]), 4, (0, 0, 255), -1)
+			cv2.circle(image, (bottomLeft[0], bottomLeft[1]), 4, (0, 255, 0), -1)
 			# draw the ArUco marker ID on the image
 
 			ArUcolist.append([markerID, cX, cY])

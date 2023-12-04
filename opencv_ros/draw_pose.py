@@ -213,13 +213,13 @@ class DrawPose():
             #     cv2.line(self.image, (l_wrist), (l_pinky_mcp),(255,255,255),1)
 
     def draw_side_pos(self, image, detection = False, side = 2, rad_circle = 3, size_line = 1):
-        l_shoulder = self.list_pose[11][1::]
-        l_hip = self.list_pose[23][1::]
-        l_ear = self.list_pose[7][1::]
+        l_shoulder = self.list_pose[11]
+        l_hip = self.list_pose[23]
+        l_ear = self.list_pose[7]
 
-        r_shoulder = self.list_pose[12][1::]
-        r_hip = self.list_pose[24][1::]
-        r_ear = self.list_pose[8][1::]        
+        r_shoulder = self.list_pose[12]
+        r_hip = self.list_pose[24]
+        r_ear = self.list_pose[8]      
         if side == 1:
             if len(self.list_pose) > 0:
                 pass

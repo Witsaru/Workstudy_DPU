@@ -5,7 +5,7 @@ import utils as u
 aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_5X5_1000)
 
 
-cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(0)
 # cap = cv2.VideoCapture("Video/2023-10-24-155544.webm")
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 600)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 800)
